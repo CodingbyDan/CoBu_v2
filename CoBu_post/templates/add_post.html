@@ -3,15 +3,21 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-<h1>Add New Blog Post</h1>
-<br>
-<div>
-    <form method="POST">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button class="btn btn-primary">Post</button>
-    </form>
-</div>
+    <h1>Add New Blog Post</h1>
+    <br>
+    <div>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-primary">Post</button>
+        </form>
+    </div>
+
+    <script>
+        var name = "{{ user.id }}";
+        document.getElementById(" ").value = name;
+    </script>
+
 {% else %}
 
 You aren't authorised to be here!! (back off)
