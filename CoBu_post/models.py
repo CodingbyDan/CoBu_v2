@@ -15,12 +15,16 @@ class Category(models.Model):
 
 
 class Post(models.Model):
+
+    PLATFORM_CHOICES = [ ('PC', 'PC'), ('Playstation', 'Playstation'), ('Xbox', 'Xbox'), ('Nintendo', 'Nintendo'), ]
+
     title = models.CharField(max_length=255)
     title_tag = models.CharField(max_length=225)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
-    body = models.TextField()
+    body = models.TextField(default='This is a default body content.')
     post_date = models.DateField(auto_now_add=True)
     category = models.CharField(max_length=255, default='uncategorised')
+    platform = models.CharField(max_length=255, choices=PLATFORM_CHOICES, default='PC')
     likes = models.ManyToManyField(User, related_name='blog_posts')
 
     def total_likes(self):
