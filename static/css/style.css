@@ -1,3 +1,54 @@
-h1 {
-    color: red;
+body {
+    font-family: Arial, sans-serif; 
+    background: url('{% static "images/background.jpg" %}') no-repeat center center fixed; 
+    background-size: cover;
+    background-color: #DB995A;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    background-color: #D6D4A0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-block {
+    background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.post-block:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    font-size: 0.8em;
+    color: #555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
 }

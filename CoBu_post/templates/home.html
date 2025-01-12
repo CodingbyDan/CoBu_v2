@@ -1,24 +1,34 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<h1>CoBu Mission Board</h1>
 
-
-<h1>CoBu Post Board</h1>
-
-<ul>
-{% for post in object_list %}
-    <li><a href="{% url 'post-details'|slugify post.pk%}">{{ post.title }}</a>
-        - <a href="{% url 'category' post.category|slugify %}">{{ post.category }}</a>
-        - {{ post.platform }}
-        - {{ post.author }}
-        - {{ post.post_date }}<br>
+<div class="posts-container">
+    {% for post in object_list %}
+    <div class="post-block">
+        <a href="{% url 'post-details' post.pk %}">
+            <h2>{{ post.title }}</h2>
+        </a>
+        <div class="post-meta">
+            <a href="{% url 'category' post.category|slugify %}">{{ post.category }}</a> |
+            {{ post.platform }} | 
+            {{ post.author }} | 
+            {{ post.post_date }}
+        </div>
+        <div class="post-content">
+            {{ post.body|slice:":200" |safe }}...
+            <a href="{% url 'post-details' post.pk %}">Read more</a>
+        </div>
 
         {% if user.is_authenticated and post.author.id == user.id %}
-            <small><a href="{% url 'update_post' post.pk%}">Edit</a>  <a href="{% url 'delete_post' post.pk%}">Delete</a></small><br>
+        <div class="post-actions">
+            <small>
+                <a href="{% url 'update_post' post.pk %}">Edit</a>
+                <a href="{% url 'delete_post' post.pk %}">Delete</a>
+            </small>
+        </div>
         {% endif %}
-    {{ post.body|slice:":200"|safe }}</li>
-{% endfor %}
-</ul>
-
-
+    </div>
+    {% endfor %}
+</div>
 {% endblock %}
