@@ -69,3 +69,18 @@ For a fantasty / adventure theme colour pallete:
 For a Sci-fi / military theme colour pallete:
 ![alt text](cobu5.png)
 
+<br>
+<h2>Testing</h2>
+
+<p>I run the python code through the Code Institute linter to check it meets the PEP 8 guidelines, which it didn't. I've no formatted all the offending lines and indented them to keep things readable.</p>
+
+
+
+
+<h3>W3C CSS & Html Validator check</h3>
+
+
+![alt text](<Screenshot 2025-01-13 125516.png>)
+
+![alt text](<Screenshot 2025-01-13 140919.png>)
+
