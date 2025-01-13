@@ -45,13 +45,27 @@ Ideally, there would be a way to create sessions and describe the kind of team t
 <br>
 <h2>Design Decisions</h2>
 
-I would like the app to be presented in a way that looks like something often found in adventures games, such as a quest board in a town. In time it would be great to build the posts to look like notes pinned to the board, but for starters, perhaps just a quest board backdrop will do.
+<p>I would like the app to be presented in a way that looks like something often found in adventures games, such as a quest board in a town. In time it would be great to build the posts to look like notes pinned to the board, or even something a little more sci-fi, but for starters, perhaps just a quest board backdrop will do.</p>
 
-While I may not have time to implement it, it would be great if the posts could be filtered by both playstyle AND platform. For now, playstyle works and the platform is displayed on the main post board. In stead of the text saying platform, it could be nice to use the iconic logos for each to make the posts a little more interesting visually.
+<p>While I may not have time to implement it, it would be great if the posts could be filtered by both playstyle AND platform. For now, playstyle works and the platform is displayed on the main post board. In stead of the text saying platform, it could be nice to use the iconic logos for each to make the posts a little more interesting visually.</p>
 
 <h3></h3>
 
 <h3>Wireframes</h3>
 
 
+
 <h3>Colour Options</h3>
+
+<p>I've considered two themes, which would drasctically impact the choices of colours. Fantasty/Adventure quest board would use more orange, brown and light greens. If I were to go down the more sci-fi digital board, it would be a more grey, blue and red.</p>
+
+
+
+For a fantasty / adventure theme colour pallete:
+![alt text](/cobu4.png)
+
+
+
+For a Sci-fi / military theme colour pallete:
+![alt text](cobu5.png)
+

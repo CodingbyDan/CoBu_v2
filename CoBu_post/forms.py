@@ -17,11 +17,16 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'title_tag', 'category', 'platform', 'body')
 
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter a title..'}),
-            'title_tag': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter game title..'}),
-            'author': forms.TextInput(attrs={'class': 'form-control', 'value': '', 'id': 'user', 'type': 'hidden'}),
-            'category': forms.Select(choices=choice_list, attrs={'class': 'form-control'}),
-            'platform': forms.Select(choices=Post.PLATFORM_CHOICES, attrs={'class': 'form-control'}),
+            'title': forms.TextInput(attrs={'class': 'form-control', 
+                'placeholder': 'Enter a title..'}),
+            'title_tag': forms.TextInput(attrs={'class': 'form-control', 
+                'placeholder': 'Enter game title..'}),
+            'author': forms.TextInput(attrs={'class': 'form-control', 
+                'value': '', 'id': 'user', 'type': 'hidden'}),
+            'category': forms.Select(choices=choice_list, 
+                attrs={'class': 'form-control'}),
+            'platform': forms.Select(choices=Post.PLATFORM_CHOICES, 
+                attrs={'class': 'form-control'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
         }
 
@@ -32,7 +37,9 @@ class EditForm(forms.ModelForm):
         fields = ('title', 'title_tag', 'body')
 
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter a title..'}),
-            'title_tag': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter game title..'}),
+            'title': forms.TextInput(attrs={'class': 'form-control', 
+                'placeholder': 'Enter a title..'}),
+            'title_tag': forms.TextInput(attrs={'class': 'form-control', 
+                'placeholder': 'Enter game title..'}),
             'body': forms.Textarea(attrs={'class': 'form-control'}),
         }
