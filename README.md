@@ -1,3 +1,10 @@
+*I had to start a new project after a major issue occurred that I couldn't find a fix for. I've almost run out of time to resolve the following issues:
+
+Gaps in readme
+CSS styling not working in deployed Heroku app
+
+
+
 <h3>Purpose:</h3>
 <p>The purpose of CoBu (Co-op-Buddy-up) is for gamers looking for team mates in co-op enabled games to find others who have the same games and availability. The plan is that they could add a list of games and free times in order to see how many other people are also looking via a main calendar. The next step would be a way to form a chat between team mates so they can talk among themselves and share passwords to private games or servers.</p>
 
